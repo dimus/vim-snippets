@@ -28,6 +28,17 @@ snippet ts "Timestamp header" b
 $0
 endsnippet
 
+snippet yesterdayts "Timestamp header" b
+## ${1:`date +"%A %Y-%m-%d" -d "yesterday"`}
+
+$0
+endsnippet
+
+snippet tomorrowts "Timestamp header" b
+## ${1:`date +"%A %Y-%m-%d" -d "tomorrow"`}
+
+$0
+endsnippet
 snippet h2 "Sub Section" b
 ## ${1:Section Name} ##
 $0
