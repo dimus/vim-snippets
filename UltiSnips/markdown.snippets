@@ -8,7 +8,6 @@ snippet pdoc "Start of a pandoc document" b
 % ${1:Title}
 % Dmitry Mozzherin
 % ${2:`date +"%Y-%m-%d %H:%M:%S"`}
-
 ---
 header-includes:
   - \hypersetup{colorlinks=false,
@@ -20,6 +19,12 @@ endsnippet
 
 snippet h1 "Section" b
 # ${1:Section Name} #
+$0
+endsnippet
+
+snippet ts "Timestamp header" b
+## ${1:`date +"%A %Y-%m-%d"`}
+
 $0
 endsnippet
 
