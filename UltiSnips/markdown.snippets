@@ -17,13 +17,18 @@ header-includes:
 $0
 endsnippet
 
-snippet h1 "Section" b
-# ${1:Section Name} #
-$0
+snippet github "GitHub ticket" i
+(Ticket [#${1:${VISUAL:Num}}](https://github.com/GlobalNamesArchitecture/${2:Proj}/issues/${3:${VISUAL:Num}}))$0
 endsnippet
 
-snippet ts "Timestamp header" b
-## ${1:`date +"%A %Y-%m-%d"`}
+snippet link "Link to something"
+[${1:${VISUAL:Text}}](${3:http://${2:www.url.com}})$0
+endsnippet
+
+snippet week "Week of the year" b
+# ${1:Week #`date +"%V"` of `date +%Y`}
+
+## Changelog
 
 $0
 endsnippet
@@ -39,6 +44,12 @@ snippet tomorrowts "Timestamp header" b
 
 $0
 endsnippet
+
+snippet h1 "Section" b
+# ${1:Section Name}
+$0
+endsnippet
+
 snippet h2 "Sub Section" b
 ## ${1:Section Name} ##
 $0
