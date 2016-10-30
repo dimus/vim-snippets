@@ -33,6 +33,12 @@ snippet week "Week of the year" b
 $0
 endsnippet
 
+snippet todayts "Timestamp header" b
+## ${1:`date +"%A %Y-%m-%d"`}
+
+$0
+endsnippet
+
 snippet yesterdayts "Timestamp header" b
 ## ${1:`date +"%A %Y-%m-%d" -d "yesterday"`}
 
