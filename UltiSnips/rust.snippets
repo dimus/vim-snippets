@@ -4,6 +4,14 @@
 
 priority -50
 
+snippet pdb "println!(..)" b
+println!("{:#?}",${1});
+endsnippet
+
+snippet ts "to_string()" i
+to_string();${0}
+endsnippet
+
 snippet let "let variable declaration" b
 let ${1:name}${2:: ${3:type}} = ${4};
 endsnippet
